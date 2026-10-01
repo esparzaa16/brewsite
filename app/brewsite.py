@@ -1,30 +1,23 @@
 from flask import Flask
-
+from flask import render_template as rt
 app = Flask(__name__)
 
 @app.route("/")
 @app.route("/home")
 def home():
-    return "<p>Hello, 362 World!</p>"
+    return rt("home.html", user = "Angie Esparza")
 
 @app.route("/breweries")
 def breweries():
-    return "<p>Welcome to Breweries</p>"
+    return rt("breweries.html", user = "Angie Esparza")
 
 @app.route("/beer_types")
 def beer_types():
-    return "<p>Welcome to beer types</p>"
+    return rt("beer_types.html", user = "Angie Esparza")
 
 @app.route("/about")
 def about():
-    return "<p>Welcome to about us</p>"
+    return rt("about.html", user = "Angie Esparza")
     
-
-
-
-
     
-if __name__ == "__main__":
-    app.run(debug=True)
  
-    
