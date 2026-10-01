@@ -1,2 +1,2 @@
 # brewsite
-A simple python flask application about Brewsites.
+A simple python flask application about Breweries.
